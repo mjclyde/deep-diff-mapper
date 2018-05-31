@@ -1,7 +1,7 @@
 # DeepDiffMapper
 
 [![Build Status](https://travis-ci.com/mjclyde/deep-diff-mapper.svg?branch=master)](https://travis-ci.com/mjclyde/deep-diff-mapper)
-
+[![Coverage Status](https://coveralls.io/repos/github/mjclyde/deep-diff-mapper/badge.svg?branch=master)](https://coveralls.io/github/mjclyde/deep-diff-mapper?branch=master)
 
 ```sh
    $ npm install deep-diff-mapper
