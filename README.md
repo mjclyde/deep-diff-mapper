@@ -1,4 +1,4 @@
-# ByteList
+# DeepDiffMapper
 
 ```sh
    $ npm install deep-diff-mapper
