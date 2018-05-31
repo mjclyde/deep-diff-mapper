@@ -1,0 +1,35 @@
+{
+  "name": "deep-diff-mapper",
+  "version": "1.0.0",
+  "description": "Run a deep difference comparison on two objects",
+  "main": "dist/deepDiffMapper.js",
+  "types": "dist/deepDiffMapper.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "nyc mocha && nyc report --reporter=text --reporter=html",
+    "test:watch": "mocha -w",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjclyde/deep-diff-mapper.git"
+  },
+  "keywords": [],
+  "author": "Matt Clyde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjclyde/deep-diff-mapper/issues"
+  },
+  "homepage": "https://github.com/mjclyde/deep-diff-mapper#readme",
+  "devDependencies": {
+    "@types/node": "^10.0.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "lodash": "^4.17.10",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {}
+}
