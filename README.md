@@ -1,5 +1,8 @@
 # DeepDiffMapper
 
+[![Build Status](https://travis-ci.com/mjclyde/deep-diff-mapper.svg?branch=master)](https://travis-ci.com/mjclyde/deep-diff-mapper)
+
+
 ```sh
    $ npm install deep-diff-mapper
 ```
