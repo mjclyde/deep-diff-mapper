@@ -91,4 +91,8 @@ describe('DeepDiffMapper', () => {
         assert.equal(diff.wat[5].__type__, DeepDiffMapper.VALUE_DELETED);
     });
 
+    it('Should pass', () => {
+        assert(true);
+    });
+
 });
