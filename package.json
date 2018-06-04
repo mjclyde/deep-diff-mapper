@@ -1,6 +1,6 @@
 {
   "name": "deep-diff-mapper",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Run a deep difference comparison on two objects",
   "main": "dist/deepDiffMapper.js",
   "types": "dist/deepDiffMapper.d.ts",
