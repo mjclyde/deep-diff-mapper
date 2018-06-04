@@ -1,3 +1,4 @@
+import * as _ from 'lodash';
 
 export class DeepDiffMapper {
 
@@ -53,14 +54,25 @@ export class DeepDiffMapper {
         }
 
         return diff;
-
     }
 
-    public static KeepChangesOnly(diff, obj = {}) {
-        if (diff.__type__ !== this.VALUE_UNCHANGED) {
-
-        }
+    public static ToArray(diff: any, keys: string[] = []) {
+        let changes: any = [];
+        _.forEach(diff, (val, key) => {
+            if (val && val.__type__ && val.__type__ !== DeepDiffMapper.VALUE_UNCHANGED) {
+                const path = _.concat(keys, [key]);
+                changes.push({
+                    type: val.__type__,
+                    path,
+                    oldVal: val.oldVal,
+                    newVal: val.newVal,
+                    changes: DeepDiffMapper.ToArray(val, path),
+                });
+            }
+        });
+        return changes;
     }
+
 
     private static CompareValues(value1, value2) {
         if (value1 === value2) {
