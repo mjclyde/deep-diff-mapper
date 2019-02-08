@@ -1,6 +1,6 @@
 {
   "name": "deep-diff-mapper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Run a deep difference comparison on two objects",
   "main": "dist/deepDiffMapper.js",
   "types": "dist/deepDiffMapper.d.ts",
@@ -19,13 +19,13 @@
   },
   "homepage": "https://github.com/mjclyde/deep-diff-mapper#readme",
   "devDependencies": {
-    "@types/node": "^10.0.0",
-    "chai": "^4.1.2",
-    "coveralls": "^3.0.0",
-    "lodash": "^4.17.10",
+    "@types/node": "^10.12.23",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "lodash": "^4.17.11",
     "mocha": "^5.1.1",
     "nyc": "^11.7.1",
-    "typescript": "^2.8.3"
+    "typescript": "^2.9.2"
   },
   "dependencies": {}
 }
